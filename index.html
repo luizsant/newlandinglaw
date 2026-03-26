@@ -110,30 +110,27 @@
     min-width: 0;
   }
 
-  .footer-primary {
-    flex: 1 1 320px;
-    min-width: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 22px;
-  }
-
   .footer-identity {
     display: flex;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
+    flex: 0 1 auto;
+    min-width: 0;
+    max-width: min(420px, 36vw);
   }
 
   .footer-cert-strip {
     display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 14px;
-    width: 100%;
-    max-width: 680px;
-    padding: 16px 24px 18px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px 18px;
+    flex: 1 1 260px;
+    min-width: 200px;
+    max-width: 560px;
+    padding: 10px 18px 12px;
     box-sizing: border-box;
     border: 1px solid var(--border);
     border-radius: 10px;
@@ -142,12 +139,14 @@
 
   .footer-cert-label {
     margin: 0;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 600;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
     color: rgba(212,184,122,0.9);
+    flex-shrink: 0;
+    line-height: 1.2;
   }
 
   .footer-cert-logos-row {
@@ -155,13 +154,15 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 22px 28px;
+    gap: 14px 18px;
+    flex: 1 1 auto;
+    min-width: 0;
   }
 
   .footer-cert-img {
-    height: 44px;
+    height: 36px;
     width: auto;
-    max-width: min(200px, 30vw);
+    max-width: min(180px, 22vw);
     object-fit: contain;
     object-position: center;
     display: block;
@@ -1099,26 +1100,23 @@
 
   /* ─── FOOTER ─── */
   footer {
-    padding: 48px 80px;
+    padding: 22px 80px 26px;
     border-top: 1px solid var(--border);
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 32px 48px;
-  }
-
-  .footer-brand {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 18px;
-    color: var(--gold-light);
-    letter-spacing: 0.05em;
+    gap: 18px 28px;
   }
 
   .footer-meta {
     font-size: 13px;
     color: var(--text-muted);
     text-align: right;
+    flex: 0 1 auto;
+    min-width: 0;
+    max-width: min(340px, 32vw);
   }
 
   /* ─── ALERTA FLUTUANTE ─── */
@@ -1373,7 +1371,7 @@
     }
 
     footer {
-      padding: 44px 40px;
+      padding: 22px 40px 26px;
     }
 
     .cta-section {
@@ -1598,18 +1596,11 @@
     }
 
     footer {
-      padding: 40px 24px;
+      padding: 28px 24px 32px;
       flex-direction: column;
       text-align: center;
-      align-items: center;
-    }
-
-    .footer-primary {
-      align-items: center;
-      width: 100%;
-      max-width: 420px;
-      margin-left: auto;
-      margin-right: auto;
+      align-items: stretch;
+      gap: 22px;
     }
 
     .footer-identity {
@@ -1617,26 +1608,35 @@
       align-items: center;
       text-align: center;
       justify-content: center;
+      max-width: 100%;
     }
 
     .footer-cert-strip {
       max-width: 100%;
-      padding: 14px 16px 16px;
-      gap: 12px;
+      padding: 12px 14px 14px;
+      gap: 10px 14px;
+      justify-content: center;
+    }
+
+    .footer-cert-label {
+      text-align: center;
+      width: 100%;
     }
 
     .footer-cert-logos-row {
-      gap: 20px 24px;
+      gap: 14px 18px;
+      justify-content: center;
     }
 
     .footer-cert-img {
-      height: 38px;
-      max-width: min(240px, 85vw);
+      height: 34px;
+      max-width: min(220px, 80vw);
     }
 
     .footer-meta {
       text-align: center;
       width: 100%;
+      max-width: none;
     }
 
     .cta-section {
@@ -2172,22 +2172,19 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-primary">
-    <div class="footer-identity">
-      <img class="footer-logo" src="assets/img/brand/logo-advocacia-ts.png" alt="" width="200" height="56" aria-hidden="true">
-      <div class="footer-brand-text">
-        <div class="footer-brand"></div>
-        <div style="font-size: 13px; color: rgba(212, 184, 122, 0.92); margin-top: 6px; letter-spacing: 0.02em;">Dr. Luiz Antônio Santiago Corrêa</div>
-        <div style="font-size: 13px; color: var(--text-muted); margin-top: 4px;">Advocacia especializada em defesa do executado empresário</div>
-      </div>
+  <div class="footer-identity">
+    <img class="footer-logo" src="assets/img/brand/logo-advocacia-ts.png" alt="" width="200" height="56" aria-hidden="true">
+    <div class="footer-brand-text">
+      <div style="font-size: 13px; color: rgba(212, 184, 122, 0.92); letter-spacing: 0.02em;">Dr. Luiz Antônio Santiago Corrêa</div>
+      <div style="font-size: 13px; color: var(--text-muted); margin-top: 4px;">Advocacia especializada em defesa do executado empresário</div>
     </div>
-    <div class="footer-cert-strip" aria-label="Instituições onde realizei formação e cursos">
-      <p class="footer-cert-label">Formação com:</p>
-      <div class="footer-cert-logos-row">
-        <img class="footer-cert-img" src="assets/img/footer/expert-execucao-removebg-preview-1.png" alt="Expert em Execução — formação complementar" width="200" height="52" loading="lazy" decoding="async">
-        <img class="footer-cert-img" src="assets/img/footer/defesa_do_executado-removebg-preview.png" alt="Expert na defesa do executado — formação complementar" width="220" height="52" loading="lazy" decoding="async">
-        <img class="footer-cert-img" src="assets/img/footer/MYLS_academy-removebg-preview.png" alt="MYLS Academy — formação complementar" width="180" height="48" loading="lazy" decoding="async">
-      </div>
+  </div>
+  <div class="footer-cert-strip" aria-label="Instituições onde realizei formação e cursos">
+    <p class="footer-cert-label">Formação com:</p>
+    <div class="footer-cert-logos-row">
+      <img class="footer-cert-img" src="assets/img/footer/expert-execucao-removebg-preview-1.png" alt="Expert em Execução — formação complementar" width="200" height="52" loading="lazy" decoding="async">
+      <img class="footer-cert-img" src="assets/img/footer/defesa_do_executado-removebg-preview.png" alt="Expert na defesa do executado — formação complementar" width="220" height="52" loading="lazy" decoding="async">
+      <img class="footer-cert-img" src="assets/img/footer/MYLS_academy-removebg-preview.png" alt="MYLS Academy — formação complementar" width="180" height="48" loading="lazy" decoding="async">
     </div>
   </div>
   <div class="footer-meta">
