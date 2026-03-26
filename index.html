@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Defesa jurídica para sócios e empresários em execução cível e fiscal. Desbloqueio Sisbajud, embargos à execução e proteção patrimonial. Consulta pelo WhatsApp.">
+<meta name="description" content="Diagnóstico inicial sem compromisso — retorno em até 24h (dias úteis). Defesa do executado empresário em todo o Brasil: bloqueio Sisbajud, penhora, embargos, redirecionamento e execução fiscal. Primeiro contato gratuito pelo WhatsApp.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Defesa do Executado Empresário | Luiz Santiago Advocacia e Consultoria">
-<meta property="og:description" content="Atuação estratégica em execuções cíveis e fiscais contra empresários. Resposta em até 24h em dias úteis. Fiscal não atendida no estado do Pará.">
+<meta property="og:description" content="Verifique se seu caso tem solução: análise inicial sem compromisso e retorno em até 24h (dias úteis). Execução cível em todo o Brasil · fiscal com exclusão do Pará. Sigilo total.">
 <meta name="theme-color" content="#0D1B2A">
 <title>Defesa do Executado Empresário | Luiz Santiago Advocacia e Consultoria</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -357,7 +357,7 @@
     font-size: 18px;
     color: rgba(196, 208, 218, 0.95);
     max-width: 460px;
-    margin-bottom: 48px;
+    margin-bottom: 28px;
     line-height: 1.8;
   }
 
@@ -529,6 +529,114 @@
     border-radius: 50%;
     background: var(--gold);
     flex-shrink: 0;
+  }
+
+  /* ─── PROVA SOCIAL RÁPIDA (primeiro scroll — ads) ─── */
+  .proof-strip {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0;
+    background: rgba(28,46,66,0.55);
+    border-bottom: 1px solid var(--border);
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .proof-strip-item {
+    flex: 1 1 240px;
+    min-width: 200px;
+    max-width: 400px;
+    text-align: center;
+    padding: 22px 28px 26px;
+    border-right: 1px solid var(--border);
+  }
+
+  .proof-strip-item:last-child {
+    border-right: none;
+  }
+
+  .proof-strip-strong {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(28px, 3.2vw, 36px);
+    font-weight: 600;
+    color: var(--gold-light);
+    line-height: 1.15;
+    margin-bottom: 10px;
+  }
+
+  .proof-strip-text {
+    font-size: 14px;
+    line-height: 1.55;
+    color: rgba(180, 194, 208, 0.95);
+    margin: 0;
+  }
+
+  .proof-strip-text strong {
+    color: var(--gold-light);
+    font-weight: 600;
+  }
+
+  .hero-offer {
+    max-width: 520px;
+    margin-bottom: 22px;
+    padding: 16px 18px 18px;
+    border: 1px solid rgba(184,154,90,0.48);
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(184,154,90,0.16) 0%, rgba(13,27,42,0.55) 100%);
+    box-shadow: 0 12px 36px rgba(0,0,0,0.22);
+  }
+
+  .hero-offer-title {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    margin: 0 0 10px;
+  }
+
+  .hero-offer-sub {
+    font-size: 15px;
+    line-height: 1.55;
+    color: rgba(232,236,240,0.96);
+    margin: 0;
+  }
+
+  .hero-offer-sub strong {
+    color: var(--gold-pale);
+    font-weight: 600;
+  }
+
+  .proof-spotlight {
+    margin: 0 0 40px;
+    padding: 22px 26px;
+    border: 1px solid rgba(184,154,90,0.35);
+    border-radius: 12px;
+    background: linear-gradient(180deg, rgba(184,154,90,0.08), rgba(13,27,42,0.25));
+    max-width: 720px;
+  }
+
+  .proof-spotlight-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(212,184,122,0.9);
+    margin: 0 0 10px;
+  }
+
+  .proof-spotlight-text {
+    font-size: 16px;
+    line-height: 1.65;
+    color: rgba(220,228,236,0.96);
+    margin: 0;
+  }
+
+  .proof-spotlight-text strong {
+    color: var(--gold-light);
+    font-weight: 600;
   }
 
   /* ─── SECTION ─── */
@@ -1391,6 +1499,10 @@
       gap: 28px 40px;
     }
 
+    .proof-strip-item {
+      padding: 20px 24px 22px;
+    }
+
     .site-header {
       padding: 20px 32px 18px;
     }
@@ -1487,6 +1599,33 @@
 
     .hero-trust-list {
       justify-content: center;
+    }
+
+    .hero-offer {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+      max-width: 520px;
+    }
+
+    .proof-strip {
+      flex-direction: column;
+    }
+
+    .proof-strip-item {
+      border-right: none;
+      border-bottom: 1px solid var(--border);
+      max-width: none;
+      padding: 18px 20px 20px;
+    }
+
+    .proof-strip .proof-strip-item:last-child {
+      border-bottom: none;
+    }
+
+    .proof-spotlight {
+      margin-bottom: 32px;
+      padding: 18px 18px 20px;
     }
 
     .hero-qualifier {
@@ -1817,7 +1956,7 @@
   <a class="site-logo" href="#" aria-label="Luiz Santiago Advocacia e Consultoria — início da página">
     <img src="assets/img/brand/logo-advocacia-ts.png" alt="Luiz Santiago Advocacia e Consultoria" width="368" height="92">
   </a>
-  <a href="https://wa.me/5591993836796?text=Ol%C3%A1!%20Estou%20com%20uma%20execu%C3%A7%C3%A3o%20em%20andamento%20e%20quero%20uma%20an%C3%A1lise%20urgente." class="site-header-cta" target="_blank" rel="noopener noreferrer">Consulta urgente →</a>
+  <a href="https://wa.me/5591993836796?text=Ol%C3%A1!%20Quero%20verificar%20se%20meu%20caso%20tem%20solu%C3%A7%C3%A3o%20%E2%80%94%20execu%C3%A7%C3%A3o%20ou%20bloqueio%20em%20andamento." class="site-header-cta" target="_blank" rel="noopener noreferrer">Diagnóstico em 24h →</a>
 </header>
 
 <!-- ALERTA DE URGÊNCIA -->
@@ -1837,11 +1976,15 @@
       <span class="copy-lead">Execução em seu nome exige resposta técnica rápida — não adie.</span>
       Você é sócio, diretor ou empresário com execução <span class="text-highlight">fiscal ou cível</span>? Atuamos com rapidez e precisão para proteger seus bens, sua empresa e sua imagem.
     </p>
+    <div class="hero-offer fade-in fade-in-4" role="note">
+      <p class="hero-offer-title">Diagnóstico inicial sem compromisso</p>
+      <p class="hero-offer-sub">Você recebe orientação sobre <strong>prazos, riscos e próximos passos</strong> em até <strong>24h</strong> (dias úteis). <strong>Primeiro contato gratuito.</strong></p>
+    </div>
     <div class="cta-group fade-in fade-in-4">
-      <a href="https://wa.me/5591993836796?text=Ol%C3%A1!%20Quero%20falar%20com%20o%20especialista%20na%20defesa%20dos%20meus%20direitos." class="btn-primary btn-wa" target="_blank" rel="noopener noreferrer">Consulta Urgente → WhatsApp</a>
+      <a href="https://wa.me/5591993836796?text=Ol%C3%A1!%20Quero%20verificar%20se%20meu%20caso%20tem%20solu%C3%A7%C3%A3o%20%E2%80%94%20execu%C3%A7%C3%A3o%20ou%20bloqueio%20em%20andamento." class="btn-primary btn-wa" target="_blank" rel="noopener noreferrer">Verificar se meu caso tem solução → WhatsApp</a>
       <a href="#como-atuamos" class="btn-ghost">Como atuamos</a>
     </div>
-    <p class="hero-cta-note fade-in fade-in-4">Resposta em até 24h em dias úteis · Atendimento humano · Sigilo absoluto</p>
+    <p class="hero-cta-note fade-in fade-in-4">Atendimento humano · Sigilo absoluto · Execução cível em todo o Brasil</p>
     <ul class="hero-trust-list fade-in fade-in-4" aria-label="Diferenciais de atendimento">
       <li>Atendimento cível em todo o Brasil</li>
       <li>Experiência em +500 casos</li>
@@ -1888,6 +2031,21 @@
   <div class="urgency-item"><div class="urgency-dot"></div>Redirecionamento de execução</div>
   <div class="urgency-item"><div class="urgency-dot"></div>Inscrição em dívida ativa</div>
   <div class="urgency-item"><div class="urgency-dot"></div>Desconsideração da personalidade jurídica</div>
+</div>
+
+<div class="proof-strip" role="region" aria-label="Experiência e forma de atendimento">
+  <div class="proof-strip-item">
+    <div class="proof-strip-strong">+500</div>
+    <p class="proof-strip-text">Casos com defesa em execução cível e fiscal — empresários, sócios e empresas <strong>em todo o Brasil</strong>.</p>
+  </div>
+  <div class="proof-strip-item">
+    <div class="proof-strip-strong">24h</div>
+    <p class="proof-strip-text">Primeira leitura do seu caso e retorno com <strong>orientação inicial</strong> em até 24 horas nos dias úteis.</p>
+  </div>
+  <div class="proof-strip-item">
+    <div class="proof-strip-strong">Urgência</div>
+    <p class="proof-strip-text"><strong>Bloqueio Sisbajud</strong>, penhora e prazos curtos entram com prioridade na fila de análise.</p>
+  </div>
 </div>
 
 <!-- RISCOS -->
@@ -1965,8 +2123,8 @@
 <div class="cta-inline">
   <div class="cta-inline-inner">
     <p class="cta-inline-text">Execução em andamento? Quanto antes houver defesa técnica, mais opções você preserva.</p>
-    <a href="https://wa.me/5591993836796?text=Ol%C3%A1!%20Quero%20falar%20com%20o%20especialista%20na%20defesa%20dos%20meus%20direitos." class="btn-primary btn-wa" target="_blank" rel="noopener noreferrer">Falar no WhatsApp agora →</a>
-    <p class="cta-inline-note">Primeira análise orientada ao seu caso, sem compromisso.</p>
+    <a href="https://wa.me/5591993836796?text=Ol%C3%A1!%20Quero%20analisar%20minha%20situa%C3%A7%C3%A3o%20agora%20%E2%80%94%20execu%C3%A7%C3%A3o%20ou%20bloqueio%20em%20andamento." class="btn-primary btn-wa" target="_blank" rel="noopener noreferrer">Quero analisar minha situação agora →</a>
+    <p class="cta-inline-note">Diagnóstico inicial sem compromisso · retorno em até 24h (dias úteis)</p>
   </div>
 </div>
 
@@ -2069,7 +2227,7 @@
     </div>
     <div class="stat-block">
       <div class="stat-number">24h</div>
-      <div class="stat-label">Para primeira análise</div>
+      <div class="stat-label">Resposta inicial ao caso</div>
     </div>
     <div class="stat-block">
       <div class="stat-number stat-number--word">Direto</div>
@@ -2111,6 +2269,11 @@
     <h2>O que dizem quem nos avaliou<br>no <em>Google</em></h2>
     <p class="section-intro">Depoimentos publicados por clientes no perfil do escritório no Google Negócios.</p>
 
+    <div class="proof-spotlight">
+      <p class="proof-spotlight-label">Cenário frequente em execução</p>
+      <p class="proof-spotlight-text">Empresários com <strong>conta bloqueada (Sisbajud)</strong> ou <strong>penhora em curso</strong> precisam de estratégia e protocolo em tempo hábil. Cada processo é único, mas mapeamos caminhos para <strong>desbloqueio, substituição de penhora ou defesa em redirecionamento</strong>, quando cabíveis no caso.</p>
+    </div>
+
     <div class="testimonials-grid">
       <div class="testimonial">
         <div class="testimonial-byline">
@@ -2150,9 +2313,9 @@
 
 <div class="cta-inline">
   <div class="cta-inline-inner">
-    <p class="cta-inline-text">Pronto para o próximo passo? Envie uma mensagem e diga em qual fase da execução você está.</p>
-    <a href="https://wa.me/5591993836796?text=Ol%C3%A1!%20Quero%20falar%20com%20o%20especialista%20na%20defesa%20dos%20meus%20direitos." class="btn-primary btn-wa" target="_blank" rel="noopener noreferrer">Iniciar conversa no WhatsApp →</a>
-    <p class="cta-inline-note">Horário comercial: retorno típico em até 24h. Urgências: mencione na mensagem.</p>
+    <p class="cta-inline-text">Em dúvida sobre bloqueio, penhora ou risco para sócios? Uma mensagem esclarece o próximo passo.</p>
+    <a href="https://wa.me/5591993836796?text=Ol%C3%A1!%20Preciso%20entender%20meu%20risco%20%E2%80%94%20bloqueio%2C%20penhora%20ou%20redirecionamento." class="btn-primary btn-wa" target="_blank" rel="noopener noreferrer">Me ajude a entender meu risco →</a>
+    <p class="cta-inline-note">Primeiro contato gratuito · sigilo absoluto · urgências: mencione na mensagem</p>
   </div>
 </div>
 
@@ -2161,10 +2324,10 @@
   <div class="section-label cta-section-label">Não espere o pior acontecer</div>
   <h2>Cada hora conta.<br><em>Proteja o que é seu.</em></h2>
   <p class="cta-desc">
-    Consulta sigilosa e sem compromisso. Em 24 horas você terá uma análise completa da sua situação e as opções disponíveis para sua defesa.
+    Diagnóstico inicial <strong class="text-highlight">sem compromisso</strong>. Em até 24 horas (dias úteis) você recebe orientação sobre prazos, riscos e caminhos possíveis para sua defesa — com sigilo total.
   </p>
   <div class="cta-group cta-group--center">
-    <a href="https://wa.me/5591993836796?text=Ol%C3%A1!%20Quero%20falar%20com%20o%20especialista%20na%20defesa%20dos%20meus%20direitos." class="btn-primary btn-wa" target="_blank" rel="noopener noreferrer">Iniciar Consulta Urgente → WhatsApp</a>
+    <a href="https://wa.me/5591993836796?text=Ol%C3%A1!%20Quero%20verificar%20se%20meu%20caso%20tem%20solu%C3%A7%C3%A3o%20%E2%80%94%20execu%C3%A7%C3%A3o%20ou%20bloqueio%20em%20andamento." class="btn-primary btn-wa" target="_blank" rel="noopener noreferrer">Verificar se meu caso tem solução → WhatsApp</a>
     <a href="mailto:contato@luizsantiagolaw.com.br" class="btn-ghost">Enviar e-mail</a>
   </div>
   <p class="cta-section-footnote">Sigilo absoluto · Execução cível em todo o Brasil · Execução fiscal: exceto no estado do Pará · Resposta em até 24h (dias úteis) · Casos urgentes: indique na mensagem</p>
@@ -2194,7 +2357,7 @@
   </div>
 </footer>
 
-<a class="wa-fab" href="https://wa.me/5591993836796?text=Ol%C3%A1!%20Quero%20falar%20com%20o%20especialista%20na%20defesa%20dos%20meus%20direitos." target="_blank" rel="noopener noreferrer" title="WhatsApp" aria-label="Abrir WhatsApp para consulta">
+<a class="wa-fab" href="https://wa.me/5591993836796?text=Ol%C3%A1!%20Quero%20verificar%20se%20meu%20caso%20tem%20solu%C3%A7%C3%A3o%20%E2%80%94%20execu%C3%A7%C3%A3o%20ou%20bloqueio%20em%20andamento." target="_blank" rel="noopener noreferrer" title="WhatsApp" aria-label="WhatsApp — verificar se meu caso tem solução">
   <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 
