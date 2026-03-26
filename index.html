@@ -1,0 +1,2306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Defesa jurídica para sócios e empresários em execução cível e fiscal. Desbloqueio Sisbajud, embargos à execução e proteção patrimonial. Consulta pelo WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Defesa do Executado Empresário | Luiz Santiago Advocacia e Consultoria">
+<meta property="og:description" content="Atuação estratégica em execuções cíveis e fiscais contra empresários. Resposta em até 24h em dias úteis. Fiscal não atendida no estado do Pará.">
+<meta name="theme-color" content="#0D1B2A">
+<title>Defesa do Executado Empresário | Luiz Santiago Advocacia e Consultoria</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --gold: #B89A5A;
+    --gold-light: #D4B87A;
+    --gold-pale: #F5EFE0;
+    --navy: #0D1B2A;
+    --navy-mid: #1C2E42;
+    --navy-soft: #2A3F57;
+    --off-white: #F9F6F1;
+    --text-muted: #6B7A8D;
+    --border: rgba(184,154,90,0.25);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: max(72px, env(safe-area-inset-top));
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--navy);
+    color: var(--off-white);
+    line-height: 1.7;
+    overflow-x: hidden;
+    font-size: 17px;
+  }
+
+  /* ─── TOPO / LOGO + CTA ─── */
+  .site-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 22px 40px 20px;
+    background: var(--navy);
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    z-index: 2;
+  }
+
+  .site-logo {
+    display: block;
+    line-height: 0;
+    transition: opacity 0.2s;
+  }
+
+  .site-logo:hover {
+    opacity: 0.92;
+  }
+
+  .site-logo img {
+    height: 67px;
+    width: auto;
+    max-width: min(368px, 88vw);
+    object-fit: contain;
+    display: block;
+  }
+
+  .site-header-cta {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 16px;
+    border: 1px solid rgba(184,154,90,0.45);
+    border-radius: 999px;
+    color: var(--gold-light);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background: rgba(13,27,42,0.42);
+    transition: border-color 0.25s, color 0.25s, background 0.25s, transform 0.25s;
+  }
+
+  .site-header-cta:hover {
+    color: #fff;
+    border-color: rgba(212,184,122,0.75);
+    background: rgba(184,154,90,0.16);
+    transform: translateY(calc(-50% - 1px));
+  }
+
+  .footer-logo {
+    height: 44px;
+    width: auto;
+    max-width: 200px;
+    object-fit: contain;
+    flex-shrink: 0;
+    opacity: 0.95;
+  }
+
+  .footer-brand-text {
+    min-width: 0;
+  }
+
+  .footer-primary {
+    flex: 1 1 320px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+  }
+
+  .footer-identity {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .footer-cert-strip {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    width: 100%;
+    max-width: 680px;
+    padding: 16px 24px 18px;
+    box-sizing: border-box;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: rgba(184,154,90,0.06);
+  }
+
+  .footer-cert-label {
+    margin: 0;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(212,184,122,0.9);
+  }
+
+  .footer-cert-logos-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px 28px;
+  }
+
+  .footer-cert-img {
+    height: 44px;
+    width: auto;
+    max-width: min(200px, 30vw);
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    opacity: 0.96;
+    flex-shrink: 0;
+  }
+
+  /* ─── HERO ─── */
+  .hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 80% at 70% 50%, rgba(184,154,90,0.07) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 60% at 10% 20%, rgba(184,154,90,0.04) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 60px 80px 80px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-right {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-right::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--navy-mid) 0%, transparent 60%);
+    z-index: 1;
+  }
+
+  .hero-visual {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 56px;
+    padding: clamp(12px, 3.5vh, 44px) 32px 40px;
+    box-sizing: border-box;
+  }
+
+  /* Duplicata decorativa do logo (link clicável só no header) */
+  .hero-logo {
+    display: block;
+    line-height: 0;
+    flex-shrink: 0;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .hero-logo img {
+    height: 104px;
+    width: auto;
+    max-width: min(460px, 94vw);
+    object-fit: contain;
+    display: block;
+  }
+
+  .seal {
+    width: min(460px, 44vw);
+    height: min(460px, 44vw);
+    border: 2px solid rgba(184,154,90,0.45);
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    flex-shrink: 0;
+    z-index: 1;
+    box-shadow:
+      0 0 0 1px rgba(0,0,0,0.35),
+      0 16px 48px rgba(0,0,0,0.45),
+      0 0 40px rgba(184,154,90,0.25);
+  }
+
+  .seal::before {
+    content: '';
+    position: absolute;
+    inset: 8px;
+    border: 1px solid rgba(184,154,90,0.35);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .seal-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    display: block;
+    position: relative;
+    z-index: 0;
+  }
+
+  .seal-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    padding: 18px 18px 22px;
+    z-index: 2;
+    pointer-events: none;
+    background: linear-gradient(
+      to top,
+      rgba(13,27,42,0.96) 0%,
+      rgba(13,27,42,0.55) 45%,
+      rgba(13,27,42,0.12) 78%,
+      transparent 100%
+    );
+  }
+
+  .seal-overlay-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.05em;
+    line-height: 1.3;
+    margin-bottom: 6px;
+  }
+
+  .seal-overlay-oab {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(212, 184, 122, 0.95);
+    margin-bottom: 0;
+    line-height: 1.35;
+  }
+
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .eyebrow::before {
+    content: '';
+    width: 32px;
+    height: 1px;
+    background: var(--gold);
+    display: block;
+  }
+
+  h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(44px, 5.2vw, 68px);
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 28px;
+    color: #fff;
+  }
+
+  h1 em {
+    font-style: italic;
+    color: var(--gold-light);
+  }
+
+  .hero-desc {
+    font-size: 18px;
+    color: rgba(196, 208, 218, 0.95);
+    max-width: 460px;
+    margin-bottom: 48px;
+    line-height: 1.8;
+  }
+
+  .hero-desc .copy-lead {
+    display: block;
+    color: #e8ecf0;
+    font-weight: 500;
+    margin-bottom: 0.65em;
+  }
+
+  .text-highlight {
+    color: var(--gold-light);
+  }
+
+  .cta-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .cta-group--center {
+    justify-content: center;
+  }
+
+  /* Blocos full-bleed (substituem padding inline — responsivo) */
+  .section-band {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    border-top: 1px solid var(--border);
+    background: var(--navy-mid);
+    padding: 100px 80px;
+  }
+
+  .section-band-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .services-lead {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.8;
+    max-width: 460px;
+  }
+
+  @keyframes ctaPulseGlow {
+    0%, 100% {
+      box-shadow:
+        0 0 0 1px rgba(0,0,0,0.12),
+        0 8px 28px rgba(0,0,0,0.28),
+        0 0 24px rgba(184,154,90,0.42);
+    }
+    50% {
+      box-shadow:
+        0 0 0 1px rgba(0,0,0,0.1),
+        0 10px 32px rgba(0,0,0,0.32),
+        0 0 44px rgba(184,154,90,0.72);
+    }
+  }
+
+  .btn-primary {
+    position: relative;
+    background: linear-gradient(180deg, #C4A86A 0%, var(--gold) 45%, #A8894A 100%);
+    color: var(--navy);
+    padding: 20px 44px;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%);
+    box-shadow:
+      0 0 0 1px rgba(0,0,0,0.1),
+      0 8px 28px rgba(0,0,0,0.22),
+      0 0 28px rgba(184,154,90,0.35);
+  }
+
+  .hero .cta-group .btn-primary.btn-wa {
+    animation: ctaPulseGlow 3.2s ease-in-out infinite;
+  }
+
+  .btn-primary.btn-wa {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .btn-primary.btn-wa::before {
+    content: '';
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    background-color: #0D1B2A;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z'/%3E%3C/svg%3E") center/contain no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z'/%3E%3C/svg%3E") center/contain no-repeat;
+  }
+
+  .btn-primary:hover {
+    background: linear-gradient(180deg, #D4BC85 0%, var(--gold-light) 50%, #C4A86A 100%);
+    transform: translateY(-4px) scale(1.03);
+    animation: none;
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,0.12),
+      0 16px 44px rgba(0,0,0,0.35),
+      0 0 52px rgba(184,154,90,0.85);
+  }
+
+  .btn-primary:active {
+    transform: translateY(-1px) scale(1.01);
+  }
+
+  .btn-ghost {
+    border: 1px solid rgba(184,154,90,0.35);
+    color: rgba(212,184,122,0.95);
+    padding: 12px 26px;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    display: inline-block;
+    transition: border-color 0.2s, color 0.2s, background 0.2s;
+    background: transparent;
+  }
+
+  .btn-ghost:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+    transform: none;
+    box-shadow: none;
+    background: rgba(184,154,90,0.06);
+  }
+
+  /* ─── DIVIDER ─── */
+  .divider-line {
+    width: 100%;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* ─── URGENCY STRIP ─── */
+  .urgency-strip {
+    background: rgba(184,154,90,0.08);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 20px 80px;
+    display: flex;
+    gap: 48px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .urgency-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    color: var(--text-muted);
+  }
+
+  .urgency-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--gold);
+    flex-shrink: 0;
+  }
+
+  /* ─── SECTION ─── */
+  section {
+    padding: 100px 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    font-size: 12px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(34px, 4.2vw, 54px);
+    font-weight: 500;
+    line-height: 1.15;
+    margin-bottom: 24px;
+    color: #fff;
+  }
+
+  h2 em { font-style: italic; color: var(--gold-light); }
+
+  .section-intro {
+    font-size: 18px;
+    color: rgba(180, 194, 208, 0.92);
+    max-width: 580px;
+    line-height: 1.8;
+    margin-bottom: 60px;
+  }
+
+  /* ─── RISCO CARDS ─── */
+  .risks-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+  }
+
+  .risk-card {
+    background: var(--navy);
+    padding: 40px 36px;
+    position: relative;
+    transition: background 0.2s;
+  }
+
+  .risk-card:hover { background: var(--navy-mid); }
+
+  .risk-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 56px;
+    font-weight: 400;
+    color: rgba(184,154,90,0.15);
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+
+  .risk-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 12px;
+  }
+
+  .risk-desc {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+
+  .risk-tag {
+    display: inline-block;
+    background: rgba(226, 75, 74, 0.1);
+    border: 1px solid rgba(226,75,74,0.3);
+    color: #F09595;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    padding: 4px 12px;
+    margin-top: 16px;
+    text-transform: uppercase;
+  }
+
+  /* ─── COMO ATUAMOS ─── */
+  .services-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+  }
+
+  .services-list {
+    list-style: none;
+  }
+
+  .service-item {
+    border-top: 1px solid var(--border);
+    padding: 28px 0;
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 20px;
+    align-items: start;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .service-item:last-child { border-bottom: 1px solid var(--border); }
+
+  .service-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    color: var(--gold);
+    padding-top: 2px;
+  }
+
+  .service-name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+
+  .service-desc {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+
+  /* ─── DEPOIMENTOS ─── */
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    background: var(--border);
+    border: 1px solid var(--border);
+  }
+
+  .testimonial {
+    background: var(--navy);
+    padding: 40px 40px 40px 36px;
+    border-left: 3px solid rgba(184,154,90,0.45);
+    transition: border-color 0.2s, background 0.2s;
+  }
+
+  .testimonial:hover {
+    border-left-color: rgba(184,154,90,0.85);
+    background: rgba(28,46,66,0.35);
+  }
+
+  .testimonial-byline {
+    margin-bottom: 16px;
+  }
+
+  .testimonial-name {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+  }
+
+  .testimonial-stars {
+    color: #F4B400;
+    font-size: 15px;
+    letter-spacing: 4px;
+    line-height: 1;
+  }
+
+  .testimonial-quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    font-style: italic;
+    color: #fff;
+    line-height: 1.5;
+    margin: 0 0 16px;
+  }
+
+  .testimonial-quote strong {
+    font-style: normal;
+    font-weight: 600;
+    color: var(--gold-light);
+  }
+
+  .testimonial-google {
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(107, 122, 141, 0.95);
+  }
+
+  /* ─── STATS ─── */
+  .stats-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    margin-top: 80px;
+  }
+
+  .stat-block {
+    background: var(--navy);
+    padding: 40px 36px;
+    text-align: center;
+  }
+
+  .stat-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 52px;
+    font-weight: 500;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .stat-label {
+    font-size: 14px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .stat-number--word {
+    font-size: clamp(36px, 4vw, 48px);
+    letter-spacing: 0.02em;
+  }
+
+  .stats-disclaimer {
+    font-size: 12px;
+    color: rgba(107,122,141,0.85);
+    text-align: center;
+    margin-top: 20px;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+  }
+
+  /* ─── CTA INLINE (entre seções) ─── */
+  .cta-inline {
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: linear-gradient(180deg, rgba(184,154,90,0.1) 0%, rgba(184,154,90,0.04) 50%, rgba(13,27,42,0.4) 100%);
+    padding: 56px 80px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-inline::before {
+    content: '';
+    position: absolute;
+    inset: -40%;
+    background: radial-gradient(circle at 50% 30%, rgba(184,154,90,0.1) 0%, transparent 55%);
+    pointer-events: none;
+    opacity: 0.85;
+  }
+
+  .cta-inline-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .cta-inline-text {
+    font-size: 20px;
+    color: #e8ecf0;
+    margin-bottom: 24px;
+    line-height: 1.55;
+  }
+
+  .cta-inline-note {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-top: 16px;
+  }
+
+  .hero-cta-note {
+    font-size: 15px;
+    color: var(--text-muted);
+    margin-top: 20px;
+    max-width: 420px;
+    line-height: 1.5;
+  }
+
+  .hero-trust-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+    max-width: 560px;
+  }
+
+  .hero-trust-list li {
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(212,184,122,0.95);
+    border: 1px solid rgba(184,154,90,0.32);
+    background: rgba(184,154,90,0.1);
+    padding: 7px 10px;
+    border-radius: 999px;
+    line-height: 1.2;
+  }
+
+  .hero-qualifier {
+    margin-top: 26px;
+    max-width: 560px;
+    padding: 18px 20px 16px;
+    border: 1px solid var(--border);
+    background: linear-gradient(180deg, rgba(184,154,90,0.1), rgba(13,27,42,0.35));
+    border-radius: 12px;
+  }
+
+  .hero-qualifier-title {
+    font-size: 13px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: rgba(212,184,122,0.92);
+    margin-bottom: 12px;
+  }
+
+  .hero-qualifier-list {
+    list-style: none;
+    display: grid;
+    gap: 9px;
+  }
+
+  .hero-qualifier-list li {
+    font-size: 15px;
+    color: rgba(232,236,240,0.95);
+    padding-left: 18px;
+    position: relative;
+    line-height: 1.5;
+  }
+
+  .hero-qualifier-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.58em;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--gold);
+    box-shadow: 0 0 0 3px rgba(184,154,90,0.18);
+  }
+
+  /* Quadro espelhado abaixo da foto (hero direito) */
+  .hero-qualifier--aside {
+    margin-top: 0;
+    max-width: min(420px, 100%);
+    width: 100%;
+    align-self: center;
+  }
+
+  /* ─── FAB WhatsApp (mobile) ─── */
+  .wa-fab {
+    display: none;
+    position: fixed;
+    bottom: 22px;
+    right: 18px;
+    z-index: 999;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #25D366;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 6px 22px rgba(0,0,0,0.35);
+  }
+
+  .wa-fab:hover {
+    transform: scale(1.06);
+    box-shadow: 0 10px 32px rgba(0,0,0,0.42), 0 0 0 3px rgba(37,211,102,0.25);
+  }
+
+  .wa-fab svg {
+    width: 34px;
+    height: 34px;
+    display: block;
+  }
+
+  /* ─── PROCESSO ─── */
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    position: relative;
+  }
+
+  .process-steps::before {
+    content: '';
+    position: absolute;
+    top: 28px;
+    left: 10%;
+    width: 80%;
+    height: 1px;
+    background: var(--border);
+  }
+
+  .process-step {
+    padding: 0 24px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .step-dot {
+    width: 56px;
+    height: 56px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    background: var(--navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    color: var(--gold);
+  }
+
+  .step-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  .step-desc {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  /* ─── CTA FINAL ─── */
+  .cta-section {
+    background: var(--navy-mid);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 110px 80px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cta-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: radial-gradient(ellipse 60% 80% at 50% 50%, rgba(184,154,90,0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .cta-section::after {
+    content: '';
+    position: absolute;
+    inset: -20%;
+    z-index: 0;
+    background: radial-gradient(ellipse 45% 55% at 50% 35%, rgba(184,154,90,0.1) 0%, transparent 60%);
+    pointer-events: none;
+    opacity: 0.9;
+  }
+
+  .cta-section > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .cta-section-label {
+    margin-bottom: 24px;
+  }
+
+  .cta-section h2 {
+    font-size: clamp(38px, 5vw, 66px);
+    margin-bottom: 20px;
+  }
+
+  .cta-desc {
+    font-size: 18px;
+    color: rgba(180, 194, 208, 0.95);
+    max-width: 560px;
+    margin: 0 auto 52px;
+    line-height: 1.75;
+  }
+
+  .cta-section-footnote {
+    font-size: 14px !important;
+    color: var(--text-muted);
+    margin-top: 36px;
+    line-height: 1.6;
+  }
+
+  .faq-list {
+    max-width: 880px;
+    margin: 0 auto;
+    display: grid;
+    gap: 14px;
+  }
+
+  .faq-item {
+    border: 1px solid var(--border);
+    background: rgba(13,27,42,0.48);
+    border-radius: 12px;
+    padding: 0 20px;
+    transition: border-color 0.22s, background 0.22s;
+  }
+
+  .faq-item[open] {
+    border-color: rgba(184,154,90,0.45);
+    background: rgba(184,154,90,0.08);
+  }
+
+  .faq-item summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 18px 0;
+    font-size: 17px;
+    font-weight: 600;
+    color: #f3f5f7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .faq-item summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-item summary::after {
+    content: '+';
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgba(184,154,90,0.35);
+    color: var(--gold-light);
+    font-size: 17px;
+    line-height: 1;
+  }
+
+  .faq-item[open] summary::after {
+    content: '−';
+  }
+
+  .faq-item p {
+    color: rgba(196,208,218,0.95);
+    padding: 0 0 18px;
+    font-size: 15px;
+    line-height: 1.72;
+    max-width: 760px;
+  }
+
+  /* ─── FOOTER ─── */
+  footer {
+    padding: 48px 80px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 32px 48px;
+  }
+
+  .footer-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    color: var(--gold-light);
+    letter-spacing: 0.05em;
+  }
+
+  .footer-meta {
+    font-size: 13px;
+    color: var(--text-muted);
+    text-align: right;
+  }
+
+  /* ─── ALERTA FLUTUANTE ─── */
+  .alert-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: linear-gradient(90deg, #C4A86A 0%, var(--gold) 50%, #C9AE78 100%);
+    color: var(--navy);
+    text-align: center;
+    padding: 12px max(16px, env(safe-area-inset-left)) 12px max(16px, env(safe-area-inset-right));
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    line-height: 1.45;
+    box-shadow: 0 2px 14px rgba(0,0,0,0.12);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .alert-bar a {
+    color: var(--navy);
+    font-weight: 800;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: opacity 0.2s;
+  }
+
+  .alert-bar a:hover {
+    opacity: 0.85;
+  }
+
+  /* ─── CARROSSEL CERTIFICADOS ─── */
+  .cert-section {
+    padding: 80px 80px 100px;
+    background: var(--navy);
+    border-top: 1px solid var(--border);
+  }
+
+  .cert-section-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 28px 32px 32px;
+    border-radius: 4px;
+    border: 1px solid rgba(184,154,90,0.45);
+    background:
+      linear-gradient(90deg, rgba(184,154,90,0.85), rgba(184,154,90,0.85)) 0 0 / 32px 2px no-repeat,
+      linear-gradient(180deg, rgba(184,154,90,0.85), rgba(184,154,90,0.85)) 0 0 / 2px 32px no-repeat,
+      linear-gradient(90deg, rgba(184,154,90,0.85), rgba(184,154,90,0.85)) 100% 0 / 32px 2px no-repeat,
+      linear-gradient(180deg, rgba(184,154,90,0.85), rgba(184,154,90,0.85)) 100% 0 / 2px 32px no-repeat,
+      linear-gradient(90deg, rgba(184,154,90,0.85), rgba(184,154,90,0.85)) 0 100% / 32px 2px no-repeat,
+      linear-gradient(180deg, rgba(184,154,90,0.85), rgba(184,154,90,0.85)) 0 100% / 2px 32px no-repeat,
+      linear-gradient(90deg, rgba(184,154,90,0.85), rgba(184,154,90,0.85)) 100% 100% / 32px 2px no-repeat,
+      linear-gradient(180deg, rgba(184,154,90,0.85), rgba(184,154,90,0.85)) 100% 100% / 2px 32px no-repeat,
+      linear-gradient(160deg, rgba(28,46,66,0.95) 0%, rgba(13,27,42,0.98) 50%, rgba(28,46,66,0.92) 100%);
+    box-shadow:
+      inset 0 1px 0 rgba(255,255,255,0.06),
+      0 24px 60px rgba(0,0,0,0.35),
+      0 0 50px rgba(184,154,90,0.08);
+  }
+
+  .cert-section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .cert-section-icon {
+    font-size: 26px;
+    line-height: 1;
+    filter: drop-shadow(0 0 12px rgba(184,154,90,0.35));
+  }
+
+  .cert-section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(24px, 3.2vw, 32px);
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 0.02em;
+  }
+
+  .cert-section-sub {
+    font-size: 15px;
+    color: rgba(180, 194, 208, 0.9);
+    line-height: 1.55;
+    margin: 0 0 28px;
+    max-width: 560px;
+  }
+
+  .cert-carousel {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+  }
+
+  .cert-nav {
+    flex-shrink: 0;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 1px solid rgba(184,154,90,0.55);
+    background: rgba(13,27,42,0.85);
+    color: var(--gold);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.2s, opacity 0.2s;
+    padding: 0;
+  }
+
+  .cert-nav:hover:not(:disabled) {
+    background: rgba(184,154,90,0.15);
+    border-color: var(--gold);
+    color: var(--gold-light);
+    transform: scale(1.05);
+  }
+
+  .cert-nav:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+  }
+
+  .cert-nav svg {
+    width: 26px;
+    height: 26px;
+    fill: currentColor;
+    display: block;
+  }
+
+  .cert-viewport {
+    flex: 1;
+    min-width: 0;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  .cert-track {
+    display: flex;
+    will-change: transform;
+  }
+
+  .cert-slide {
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding: 0 4px;
+  }
+
+  .cert-card {
+    background: rgba(249,246,241,0.97);
+    border-radius: 4px;
+    border: 1px solid rgba(184,154,90,0.35);
+    box-shadow:
+      0 0 0 1px rgba(0,0,0,0.25),
+      0 16px 40px rgba(0,0,0,0.35),
+      0 0 30px rgba(184,154,90,0.1);
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .cert-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+  }
+
+  .cert-dots-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+  }
+
+  .cert-dots {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 18px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: rgba(13,27,42,0.6);
+  }
+
+  .cert-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background: rgba(107,122,141,0.6);
+    transition: background 0.25s, transform 0.2s;
+  }
+
+  .cert-dot:hover {
+    background: rgba(184,154,90,0.5);
+  }
+
+  .cert-dot.is-active {
+    background: var(--gold);
+    box-shadow: 0 0 0 2px rgba(184,154,90,0.35);
+    transform: scale(1.05);
+  }
+
+  .cert-caption {
+    text-align: center;
+    font-size: 15px;
+    color: var(--text-muted);
+    margin-top: 18px;
+    line-height: 1.5;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .btn-primary,
+    .hero .cta-group .btn-primary.btn-wa { animation: none !important; }
+    .btn-primary:hover {
+      box-shadow: 0 8px 28px rgba(0,0,0,0.3), 0 0 28px rgba(184,154,90,0.4);
+    }
+    .cta-inline::before,
+    .cta-section::after { opacity: 0.75; }
+    .alert-bar { background: var(--gold); }
+  }
+
+  .footer-oab {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(212, 184, 122, 0.88);
+  }
+
+  /* ─── TABLET ─── */
+  @media (max-width: 1100px) {
+    section {
+      padding: 72px 40px;
+    }
+
+    .hero-left {
+      padding: 64px 48px 40px 56px;
+    }
+
+    .hero-visual {
+      padding: clamp(10px, 3vh, 36px) 28px 36px;
+      gap: 48px;
+    }
+
+    footer {
+      padding: 44px 40px;
+    }
+
+    .cta-section {
+      padding: 88px 40px;
+    }
+
+    .cta-inline {
+      padding: 48px 40px;
+    }
+
+    .cert-section {
+      padding: 72px 40px 88px;
+    }
+
+    .urgency-strip {
+      padding: 20px 40px;
+      gap: 28px 40px;
+    }
+
+    .site-header {
+      padding: 20px 32px 18px;
+    }
+
+    .site-header-cta {
+      right: 24px;
+      font-size: 12px;
+      padding: 10px 14px;
+    }
+
+    .hero-logo img {
+      height: 96px;
+      max-width: min(420px, 92vw);
+    }
+
+    .section-band {
+      padding: 72px 40px;
+    }
+
+    .services-layout {
+      gap: 48px;
+    }
+
+    .risks-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process-steps {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 36px 28px;
+    }
+
+    .process-steps::before {
+      display: none;
+    }
+
+    .stats-row {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .risk-card {
+      padding: 32px 28px;
+    }
+  }
+
+  /* ─── MOBILE ─── */
+  @media (max-width: 900px) {
+    html {
+      scroll-padding-top: max(88px, env(safe-area-inset-top));
+    }
+
+    body {
+      padding-bottom: calc(88px + env(safe-area-inset-bottom, 0px));
+    }
+
+    .wa-fab {
+      display: flex;
+      bottom: max(18px, env(safe-area-inset-bottom, 0px));
+      right: max(16px, env(safe-area-inset-right, 0px));
+    }
+
+    .hero {
+      grid-template-columns: 1fr;
+      min-height: auto;
+    }
+
+    .hero-left {
+      padding: 56px 24px 28px;
+      text-align: center;
+      align-items: center;
+    }
+
+    .hero-left .eyebrow {
+      justify-content: center;
+    }
+
+    .hero-left .eyebrow::before {
+      display: none;
+    }
+
+    .hero-desc {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+      display: inline-block;
+      width: 100%;
+      max-width: 520px;
+    }
+
+    .hero-cta-note {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-trust-list {
+      justify-content: center;
+    }
+
+    .hero-qualifier {
+      text-align: left;
+      width: 100%;
+      max-width: 520px;
+    }
+
+    .hero .cta-group {
+      justify-content: center;
+      flex-direction: column;
+      align-items: stretch;
+      width: 100%;
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero .cta-group .btn-primary.btn-wa,
+    .hero .cta-group .btn-ghost {
+      width: 100%;
+      max-width: none;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero-right {
+      min-height: 0;
+      padding: 0 16px 44px;
+    }
+
+    .hero-visual {
+      padding: 4px 12px 36px;
+      gap: 40px;
+    }
+
+    .hero-logo img {
+      height: clamp(72px, 20vw, 92px);
+      max-width: min(360px, 94vw);
+    }
+
+    .seal {
+      width: min(85vw, 360px);
+      height: min(85vw, 360px);
+    }
+
+    .seal-overlay {
+      padding: 14px 12px 16px;
+    }
+
+    .seal-overlay-name {
+      font-size: 11px;
+      letter-spacing: 0.03em;
+      line-height: 1.35;
+      padding: 0 6px;
+      margin-bottom: 5px;
+    }
+
+    .seal-overlay-oab {
+      font-size: 9px;
+      letter-spacing: 0.12em;
+    }
+
+    section {
+      padding: 56px 24px;
+    }
+
+    .section-band {
+      padding: 56px 24px;
+    }
+
+    .section-intro {
+      margin-bottom: 40px;
+    }
+
+    .risks-grid,
+    .testimonials-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .stats-row {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .process-steps {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+
+    .process-steps::before {
+      display: none;
+    }
+
+    .services-layout {
+      grid-template-columns: 1fr;
+      gap: 36px;
+    }
+
+    .urgency-strip {
+      padding: 18px 24px;
+      gap: 16px 24px;
+      justify-content: center;
+    }
+
+    .urgency-item {
+      font-size: 14px;
+    }
+
+    footer {
+      padding: 40px 24px;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+
+    .footer-primary {
+      align-items: center;
+      width: 100%;
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .footer-identity {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .footer-cert-strip {
+      max-width: 100%;
+      padding: 14px 16px 16px;
+      gap: 12px;
+    }
+
+    .footer-cert-logos-row {
+      gap: 20px 24px;
+    }
+
+    .footer-cert-img {
+      height: 38px;
+      max-width: min(240px, 85vw);
+    }
+
+    .footer-meta {
+      text-align: center;
+      width: 100%;
+    }
+
+    .cta-section {
+      padding: 56px 24px;
+    }
+
+    .cta-group--center {
+      flex-direction: column;
+      align-items: stretch;
+      width: 100%;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-section .cta-group--center .btn-primary.btn-wa,
+    .cta-section .cta-group--center .btn-ghost {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .cert-section {
+      padding: 52px 12px 64px;
+    }
+
+    .cert-section-inner {
+      max-width: 100%;
+      padding: 16px 8px 20px;
+    }
+
+    /* Imagem em largura total: setas saem da lateral e ficam abaixo do slide */
+    .cert-carousel {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      row-gap: 12px;
+    }
+
+    .cert-viewport {
+      order: 1;
+      flex: 0 0 100%;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .cert-nav--prev {
+      order: 2;
+    }
+
+    .cert-nav--next {
+      order: 3;
+    }
+
+    .cert-slide {
+      padding: 0;
+    }
+
+    .cert-card {
+      padding: 6px 8px;
+    }
+
+    .cert-nav {
+      width: 42px;
+      height: 42px;
+      flex-shrink: 0;
+    }
+
+    .cert-nav svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .cert-dots {
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 100%;
+      gap: 8px;
+      padding: 10px 12px;
+    }
+
+    .cta-inline {
+      padding: 36px 20px;
+    }
+
+    .cta-inline-inner {
+      max-width: 100%;
+    }
+
+    .cta-inline .btn-primary.btn-wa {
+      width: 100%;
+      max-width: 400px;
+      box-sizing: border-box;
+      justify-content: center;
+    }
+
+    .cta-inline-text {
+      font-size: 17px;
+    }
+
+    .site-header {
+      padding: 16px max(16px, env(safe-area-inset-left)) 14px max(16px, env(safe-area-inset-right));
+    }
+
+    .site-header-cta {
+      display: none;
+    }
+
+    .site-logo img {
+      height: 52px;
+      max-width: min(280px, 88vw);
+    }
+
+    .testimonial {
+      padding: 28px 24px 28px 22px;
+    }
+
+    .testimonial-quote {
+      font-size: clamp(19px, 5.2vw, 22px);
+    }
+
+    .alert-bar {
+      font-size: 13px;
+      padding-top: max(10px, env(safe-area-inset-top));
+      padding-bottom: 12px;
+      padding-left: max(12px, env(safe-area-inset-left));
+      padding-right: max(12px, env(safe-area-inset-right));
+    }
+
+    .services-lead {
+      max-width: 100%;
+    }
+
+    .faq-item {
+      padding: 0 16px;
+    }
+
+    .faq-item summary {
+      font-size: 16px;
+      padding: 16px 0;
+    }
+
+    .faq-item p {
+      font-size: 14px;
+      line-height: 1.66;
+      padding-bottom: 16px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .stats-row {
+      grid-template-columns: 1fr;
+    }
+
+    h1 {
+      font-size: clamp(36px, 10vw, 48px);
+    }
+  }
+
+  /* Animação de entrada */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .fade-in {
+    animation: fadeUp 0.7s ease forwards;
+  }
+
+  .fade-in-2 { animation-delay: 0.15s; opacity: 0; animation-fill-mode: forwards; }
+  .fade-in-3 { animation-delay: 0.3s; opacity: 0; animation-fill-mode: forwards; }
+  .fade-in-4 { animation-delay: 0.45s; opacity: 0; animation-fill-mode: forwards; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <a class="site-logo" href="#" aria-label="Luiz Santiago Advocacia e Consultoria — início da página">
+    <img src="assets/img/brand/logo-advocacia-ts.png" alt="Luiz Santiago Advocacia e Consultoria" width="368" height="92">
+  </a>
+  <a href="https://wa.me/5591993836796?text=Ol%C3%A1!%20Estou%20com%20uma%20execu%C3%A7%C3%A3o%20em%20andamento%20e%20quero%20uma%20an%C3%A1lise%20urgente." class="site-header-cta" target="_blank" rel="noopener noreferrer">Consulta urgente →</a>
+</header>
+
+<!-- ALERTA DE URGÊNCIA -->
+<div class="alert-bar">
+  ⚠ Bloqueio Sisbajud ou penhora em andamento? <a href="https://wa.me/5591993836796?text=URGENTE%3A%20Preciso%20falar%20com%20o%20especialista%20%E2%80%94%20bloqueio%20ou%20penhora%20em%20andamento." target="_blank" rel="noopener noreferrer">Fale agora com o Dr. Luiz Antônio Santiago Corrêa →</a>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-left">
+    <div class="eyebrow fade-in">Advocacia Empresarial Estratégica</div>
+    <h1 class="fade-in fade-in-2">
+      Seu patrimônio não pode esperar.<br>
+      <em>Nem a sua liberdade.</em>
+    </h1>
+    <p class="hero-desc fade-in fade-in-3">
+      <span class="copy-lead">Execução em seu nome exige resposta técnica rápida — não adie.</span>
+      Você é sócio, diretor ou empresário com execução <span class="text-highlight">fiscal ou cível</span>? Atuamos com rapidez e precisão para proteger seus bens, sua empresa e sua imagem.
+    </p>
+    <div class="cta-group fade-in fade-in-4">
+      <a href="https://wa.me/5591993836796?text=Ol%C3%A1!%20Quero%20falar%20com%20o%20especialista%20na%20defesa%20dos%20meus%20direitos." class="btn-primary btn-wa" target="_blank" rel="noopener noreferrer">Consulta Urgente → WhatsApp</a>
+      <a href="#como-atuamos" class="btn-ghost">Como atuamos</a>
+    </div>
+    <p class="hero-cta-note fade-in fade-in-4">Resposta em até 24h em dias úteis · Atendimento humano · Sigilo absoluto</p>
+    <ul class="hero-trust-list fade-in fade-in-4" aria-label="Diferenciais de atendimento">
+      <li>Atendimento cível em todo o Brasil</li>
+      <li>Experiência em +500 casos</li>
+      <li>Canal direto com o advogado</li>
+    </ul>
+    <div class="hero-qualifier fade-in fade-in-4">
+      <p class="hero-qualifier-title">Este atendimento faz sentido se você:</p>
+      <ul class="hero-qualifier-list">
+        <li>Recebeu citação de execução e precisa agir com prazo curto.</li>
+        <li>Teve bloqueio de conta, penhora ou risco de redirecionamento aos sócios.</li>
+        <li>Quer uma estratégia clara antes de tomar qualquer decisão.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-visual">
+      <div class="hero-logo fade-in fade-in-2" aria-hidden="true">
+        <img src="assets/img/brand/logo-advocacia-ts.png" alt="" width="368" height="92" decoding="async">
+      </div>
+      <div class="seal">
+        <img class="seal-photo" src="assets/img/hero/advogado-Bm7ZUCAr.webp" alt="Dr. Luiz Antônio Santiago Corrêa">
+        <div class="seal-overlay" aria-hidden="true">
+          <span class="seal-overlay-name">Dr. Luiz Antônio Santiago Corrêa</span>
+          <span class="seal-overlay-oab">OAB/PA 18.239</span>
+        </div>
+      </div>
+      <div class="hero-qualifier hero-qualifier--aside fade-in fade-in-4">
+        <p class="hero-qualifier-title">No primeiro contato, o foco é:</p>
+        <ul class="hero-qualifier-list">
+          <li>Entender sua situação e identificar o que é urgente (prazos, bloqueios, penhoras).</li>
+          <li>Agendar a reunião online com tempo para análise adequada do processo.</li>
+          <li>Sigilo e canal direto. A estratégia jurídica detalhada é tratada após a reunião.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- STRIP DE URGÊNCIA -->
+<div class="urgency-strip">
+  <div class="urgency-item"><div class="urgency-dot"></div>Bloqueio de contas via Sisbajud</div>
+  <div class="urgency-item"><div class="urgency-dot"></div>Penhora de bens e imóveis</div>
+  <div class="urgency-item"><div class="urgency-dot"></div>Redirecionamento de execução</div>
+  <div class="urgency-item"><div class="urgency-dot"></div>Inscrição em dívida ativa</div>
+  <div class="urgency-item"><div class="urgency-dot"></div>Desconsideração da personalidade jurídica</div>
+</div>
+
+<!-- RISCOS -->
+<section>
+  <div class="section-label">O que está em jogo</div>
+  <h2>O empresário executado enfrenta riscos reais.<br><em>Conheça os mais críticos.</em></h2>
+  <p class="section-intro">
+    Uma execução sem defesa qualificada pode resultar em perdas irreversíveis em questão de horas. Entenda o que está em risco no seu caso.
+  </p>
+
+  <div class="risks-grid">
+    <div class="risk-card">
+      <div class="risk-number">01</div>
+      <div class="risk-title">Bloqueio Sisbajud</div>
+      <div class="risk-desc">Contas bancárias pessoais e empresariais bloqueadas por ordem judicial em minutos, paralisando operações e vida financeira.</div>
+      <span class="risk-tag">Imediato</span>
+    </div>
+    <div class="risk-card">
+      <div class="risk-number">02</div>
+      <div class="risk-title">Penhora de Bens</div>
+      <div class="risk-desc">Imóveis, veículos, equipamentos e participações societárias podem ser penhorados e levados a leilão para quitar a dívida.</div>
+      <span class="risk-tag">Alto Risco</span>
+    </div>
+    <div class="risk-card">
+      <div class="risk-number">03</div>
+      <div class="risk-title">Redirecionamento</div>
+      <div class="risk-desc">Sócios e diretores respondem pessoalmente pela dívida da empresa nos casos de dissolução irregular ou fraude presumida.</div>
+      <span class="risk-tag">Pessoal</span>
+    </div>
+    <div class="risk-card">
+      <div class="risk-number">04</div>
+      <div class="risk-title">Execução Fiscal Federal</div>
+      <div class="risk-desc">Dívidas com Receita Federal, INSS e outros órgãos podem gerar CND negativa, impedindo licitações e financiamentos.</div>
+      <span class="risk-tag">Operacional</span>
+    </div>
+    <div class="risk-card">
+      <div class="risk-number">05</div>
+      <div class="risk-title">Desconsideração da PJ</div>
+      <div class="risk-desc">Incidente processual que transfere a execução diretamente ao patrimônio pessoal do sócio, ignorando a separação jurídica.</div>
+      <span class="risk-tag">Crítico</span>
+    </div>
+    <div class="risk-card">
+      <div class="risk-number">06</div>
+      <div class="risk-title">Execução Cível</div>
+      <div class="risk-desc">Cumprimento de sentença e execuções cíveis com risco de constrição patrimonial e impacto direto na liquidez da empresa e dos sócios.</div>
+      <span class="risk-tag">Urgente</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-label">Dúvidas frequentes</div>
+  <h2>Antes de iniciar a consulta,<br><em>esclareça os pontos principais</em></h2>
+  <p class="section-intro">Respostas objetivas para decisões mais seguras nas primeiras horas da execução.</p>
+  <div class="faq-list">
+    <details class="faq-item" open>
+      <summary>1) Preciso esperar o bloqueio acontecer para procurar defesa?</summary>
+      <p>Não. A atuação preventiva é justamente o que amplia as opções de defesa. Quando há tempo para mapear riscos e escolher a estratégia correta, as chances de proteger patrimônio e operação aumentam.</p>
+    </details>
+    <details class="faq-item">
+      <summary>2) Minha execução é cível ou fiscal. O atendimento cobre ambos os cenários?</summary>
+      <p>Sim. A análise considera a natureza da execução e o estágio processual para definir medidas urgentes, teses de defesa e plano de condução do caso. Em execução fiscal, não atuamos no estado do Pará.</p>
+    </details>
+    <details class="faq-item">
+      <summary>3) O primeiro contato já é sigiloso?</summary>
+      <p>Sim. O contato inicial é tratado com sigilo profissional e foco em compreender seu contexto para orientar os próximos passos com segurança jurídica.</p>
+    </details>
+    <details class="faq-item">
+      <summary>4) O que enviar no WhatsApp para agilizar a análise?</summary>
+      <p>Se possível, informe o tipo de execução, a fase atual (citação, bloqueio, penhora, leilão) e o número do processo. Isso acelera o diagnóstico e a definição de prioridade.</p>
+    </details>
+  </div>
+</section>
+
+<div class="cta-inline">
+  <div class="cta-inline-inner">
+    <p class="cta-inline-text">Execução em andamento? Quanto antes houver defesa técnica, mais opções você preserva.</p>
+    <a href="https://wa.me/5591993836796?text=Ol%C3%A1!%20Quero%20falar%20com%20o%20especialista%20na%20defesa%20dos%20meus%20direitos." class="btn-primary btn-wa" target="_blank" rel="noopener noreferrer">Falar no WhatsApp agora →</a>
+    <p class="cta-inline-note">Primeira análise orientada ao seu caso, sem compromisso.</p>
+  </div>
+</div>
+
+<!-- COMO ATUAMOS -->
+<section id="como-atuamos" class="section-band">
+  <div class="section-band-inner">
+    <div class="section-label">Nossa atuação</div>
+    <div class="services-layout">
+      <div>
+        <h2>Estratégia jurídica para cada fase da <em>execução</em></h2>
+        <p class="services-lead">
+          Não existe solução genérica para situações de alta complexidade. Cada caso exige análise, timing e escolha cirúrgica da estratégia mais eficaz.
+        </p>
+      </div>
+      <ul class="services-list">
+        <li class="service-item">
+          <span class="service-num">01</span>
+          <div>
+            <div class="service-name">Desbloqueio Emergencial</div>
+            <div class="service-desc">Pedidos urgentes para liberação de valores bloqueados via Sisbajud, com prazo de horas para protocolo.</div>
+          </div>
+        </li>
+        <li class="service-item">
+          <span class="service-num">02</span>
+          <div>
+            <div class="service-name">Embargos à Execução</div>
+            <div class="service-desc">Contestação técnica da dívida executada: prescrição, excesso de execução, ilegitimidade passiva e nulidades.</div>
+          </div>
+        </li>
+        <li class="service-item">
+          <span class="service-num">03</span>
+          <div>
+            <div class="service-name">Defesa em Redirecionamento</div>
+            <div class="service-desc">Proteção do patrimônio pessoal do sócio contra tentativas indevidas de responsabilização pessoal pela dívida corporativa.</div>
+          </div>
+        </li>
+        <li class="service-item">
+          <span class="service-num">04</span>
+          <div>
+            <div class="service-name">Substituição de Penhora</div>
+            <div class="service-desc">Negociação e apresentação de bens alternativos para substituição de constrições que afetam a operação do negócio.</div>
+          </div>
+        </li>
+        <li class="service-item">
+          <span class="service-num">05</span>
+          <div>
+            <div class="service-name">Parcelamento Estratégico (PERT / Transação)</div>
+            <div class="service-desc">Negociação com PGFN e credores para regularização com descontos, preservando fluxo de caixa e continuidade empresarial.</div>
+          </div>
+        </li>
+        <li class="service-item">
+          <span class="service-num">06</span>
+          <div>
+            <div class="service-name">Recuperação Judicial Preventiva</div>
+            <div class="service-desc">Quando o cenário exige, estruturamos o processo de RJ para proteger ativos e reestruturar passivos com segurança jurídica.</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESSO -->
+<section>
+  <div class="section-label">Nosso método</div>
+  <h2>Da consulta à resolução:<br><em>como trabalhamos</em></h2>
+  <p class="section-intro">Um processo claro, orientado a resultados, com comunicação direta e sem burocracia.</p>
+
+  <div class="process-steps">
+    <div class="process-step">
+      <div class="step-dot">01</div>
+      <div class="step-title">Análise Emergencial</div>
+      <div class="step-desc">Em até 24h avaliamos o processo, os riscos imediatos e as possibilidades de atuação urgente.</div>
+    </div>
+    <div class="process-step">
+      <div class="step-dot">02</div>
+      <div class="step-title">Estratégia Personalizada</div>
+      <div class="step-desc">Mapeamos todas as frentes de defesa possíveis e apresentamos o plano de ação em linguagem clara.</div>
+    </div>
+    <div class="process-step">
+      <div class="step-dot">03</div>
+      <div class="step-title">Execução Imediata</div>
+      <div class="step-desc">Protocolo das peças, audiências e negociações conduzidas com agilidade e precisão técnica.</div>
+    </div>
+    <div class="process-step">
+      <div class="step-dot">04</div>
+      <div class="step-title">Acompanhamento Contínuo</div>
+      <div class="step-desc">Você é informado de cada movimentação. Sem surpresas, sem silêncio, com relatórios periódicos.</div>
+    </div>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat-block">
+      <div class="stat-number">+500</div>
+      <div class="stat-label">Casos defendidos</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-number">15+</div>
+      <div class="stat-label">Anos de experiência</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-number">24h</div>
+      <div class="stat-label">Para primeira análise</div>
+    </div>
+    <div class="stat-block">
+      <div class="stat-number stat-number--word">Direto</div>
+      <div class="stat-label">Canal com quem analisa o caso</div>
+    </div>
+  </div>
+  <p class="stats-disclaimer">Os números e resultados citados refletem experiência passada; cada processo é único e não há garantia de resultado futuro. Consulte sempre o seu caso em particular.</p>
+</section>
+
+<!-- CERTIFICAÇÕES -->
+<section class="cert-section" id="certificacao" aria-labelledby="certificacao-titulo">
+  <div class="cert-section-inner">
+    <div class="cert-section-header">
+      <span class="cert-section-icon" aria-hidden="true">🏅</span>
+      <h2 class="cert-section-title" id="certificacao-titulo">Certificação Especializada</h2>
+    </div>
+    <div class="cert-carousel">
+      <button type="button" class="cert-nav cert-nav--prev" id="certPrev" aria-label="Certificado anterior">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+      </button>
+      <div class="cert-viewport" id="certViewport">
+        <div class="cert-track" id="certTrack" role="region" aria-roledescription="carrossel" aria-label="Certificados"></div>
+      </div>
+      <button type="button" class="cert-nav cert-nav--next" id="certNext" aria-label="Próximo certificado">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+      </button>
+    </div>
+    <div class="cert-dots-wrap">
+      <div class="cert-dots" id="certDots" role="tablist" aria-label="Selecionar certificado"></div>
+    </div>
+    <p class="cert-caption">Treinamento AVA · Expert em Execução (AVA Educação) · Mestrado IDP (Brasília) · Magíster UCA (Buenos Aires)</p>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="section-band">
+  <div class="section-band-inner">
+    <div class="section-label">Resultados reais</div>
+    <h2>O que dizem quem nos avaliou<br>no <em>Google</em></h2>
+    <p class="section-intro">Depoimentos publicados por clientes no perfil do escritório no Google Negócios.</p>
+
+    <div class="testimonials-grid">
+      <div class="testimonial">
+        <div class="testimonial-byline">
+          <div class="testimonial-name">Felipe Alvarenga</div>
+          <div class="testimonial-stars" role="img" aria-label="5 de 5 estrelas">★★★★★</div>
+        </div>
+        <blockquote class="testimonial-quote">"Atendimento profissional, bem detalhado e com muita atenção às necessidades do cliente. Luiz demonstra profundo conhecimento em seu campo de atuação e presta todo suporte em todas as etapas do processo."</blockquote>
+        <span class="testimonial-google">Avaliação no Google</span>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-byline">
+          <div class="testimonial-name">Italo José Barbosa Mácola</div>
+          <div class="testimonial-stars" role="img" aria-label="5 de 5 estrelas">★★★★★</div>
+        </div>
+        <blockquote class="testimonial-quote">"A confiança que tive ao lidar com o Dr. Luiz dá o conforto que qualquer um precisa pra escolher um profissional. Excelente trabalho."</blockquote>
+        <span class="testimonial-google">Avaliação no Google</span>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-byline">
+          <div class="testimonial-name">Ana Cristina Rufino</div>
+          <div class="testimonial-stars" role="img" aria-label="5 de 5 estrelas">★★★★★</div>
+        </div>
+        <blockquote class="testimonial-quote">"Sua expertise e dedicação foram comprovadas em diversos casos em que tive a oportunidade de tê-lo como meu representante legal. Sempre demonstrou profundo conhecimento jurídico, alcançando resultados rápidos."</blockquote>
+        <span class="testimonial-google">Avaliação no Google</span>
+      </div>
+      <div class="testimonial">
+        <div class="testimonial-byline">
+          <div class="testimonial-name">Bruno Silva</div>
+          <div class="testimonial-stars" role="img" aria-label="5 de 5 estrelas">★★★★★</div>
+        </div>
+        <blockquote class="testimonial-quote">"Um profissional de currículo impecável, sempre atualizado, com muita experiência em resolver problemas de forma assertiva. Recomendo 100%."</blockquote>
+        <span class="testimonial-google">Avaliação no Google</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-inline">
+  <div class="cta-inline-inner">
+    <p class="cta-inline-text">Pronto para o próximo passo? Envie uma mensagem e diga em qual fase da execução você está.</p>
+    <a href="https://wa.me/5591993836796?text=Ol%C3%A1!%20Quero%20falar%20com%20o%20especialista%20na%20defesa%20dos%20meus%20direitos." class="btn-primary btn-wa" target="_blank" rel="noopener noreferrer">Iniciar conversa no WhatsApp →</a>
+    <p class="cta-inline-note">Horário comercial: retorno típico em até 24h. Urgências: mencione na mensagem.</p>
+  </div>
+</div>
+
+<!-- CTA FINAL -->
+<div class="cta-section">
+  <div class="section-label cta-section-label">Não espere o pior acontecer</div>
+  <h2>Cada hora conta.<br><em>Proteja o que é seu.</em></h2>
+  <p class="cta-desc">
+    Consulta sigilosa e sem compromisso. Em 24 horas você terá uma análise completa da sua situação e as opções disponíveis para sua defesa.
+  </p>
+  <div class="cta-group cta-group--center">
+    <a href="https://wa.me/5591993836796?text=Ol%C3%A1!%20Quero%20falar%20com%20o%20especialista%20na%20defesa%20dos%20meus%20direitos." class="btn-primary btn-wa" target="_blank" rel="noopener noreferrer">Iniciar Consulta Urgente → WhatsApp</a>
+    <a href="mailto:contato@luizsantiagolaw.com.br" class="btn-ghost">Enviar e-mail</a>
+  </div>
+  <p class="cta-section-footnote">Sigilo absoluto · Execução cível em todo o Brasil · Execução fiscal: exceto no estado do Pará · Resposta em até 24h (dias úteis) · Casos urgentes: indique na mensagem</p>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-primary">
+    <div class="footer-identity">
+      <img class="footer-logo" src="assets/img/brand/logo-advocacia-ts.png" alt="" width="200" height="56" aria-hidden="true">
+      <div class="footer-brand-text">
+        <div class="footer-brand"></div>
+        <div style="font-size: 13px; color: rgba(212, 184, 122, 0.92); margin-top: 6px; letter-spacing: 0.02em;">Dr. Luiz Antônio Santiago Corrêa</div>
+        <div style="font-size: 13px; color: var(--text-muted); margin-top: 4px;">Advocacia especializada em defesa do executado empresário</div>
+      </div>
+    </div>
+    <div class="footer-cert-strip" aria-label="Credenciais de cursos e formações">
+      <p class="footer-cert-label">Certificado por:</p>
+      <div class="footer-cert-logos-row">
+        <img class="footer-cert-img" src="assets/img/footer/expert-execucao-removebg-preview-1.png" alt="Expert em Execução — formação complementar" width="200" height="52" loading="lazy" decoding="async">
+        <img class="footer-cert-img" src="assets/img/footer/defesa_do_executado-removebg-preview.png" alt="Expert na defesa do executado — formação complementar" width="220" height="52" loading="lazy" decoding="async">
+        <img class="footer-cert-img" src="assets/img/footer/MYLS_academy-removebg-preview.png" alt="MYLS Academy — formação complementar" width="180" height="48" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </div>
+  <div class="footer-meta">
+    <div class="footer-oab">OAB/PA 18.239</div>
+    <div style="margin-top: 4px;">© 2025 Luiz Santiago Advocacia e Consultoria — Todos os direitos reservados</div>
+    <div style="margin-top: 4px; font-size: 11px; opacity: 0.6;">Este site tem caráter informativo e não constitui consulta jurídica.</div>
+  </div>
+</footer>
+
+<a class="wa-fab" href="https://wa.me/5591993836796?text=Ol%C3%A1!%20Quero%20falar%20com%20o%20especialista%20na%20defesa%20dos%20meus%20direitos." target="_blank" rel="noopener noreferrer" title="WhatsApp" aria-label="Abrir WhatsApp para consulta">
+  <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+(function () {
+  var CERT_SLIDES = [
+    { src: 'assets/img/certificates/certificado-CeQLij01.jpg', alt: 'Certificado Expert na Defesa do Executado — AVA Brasil' },
+    { src: 'assets/img/certificates/certificado2-C4FdFjmX.jpeg', alt: 'Certificado de formação — AVA Brasil' },
+    { src: 'assets/img/certificates/certificado-mestrado-idp.png', alt: 'Diploma de Mestrado Profissional em Direito — IDP Brasília' },
+    { src: 'assets/img/certificates/Certificado_MaestrieDerecho.jpg', alt: 'Diploma de Magíster en Derecho Empresario Económico — Universidad Católica Argentina (UCA)' },
+    { src: 'assets/img/certificates/certexecucao.png', alt: 'Certificado de conclusão — Treinamento Avançado Expert em Execução, 60 horas — AVA Educação' }
+  ];
+
+  var track = document.getElementById('certTrack');
+  var viewport = document.getElementById('certViewport');
+  var dotsWrap = document.getElementById('certDots');
+  var prevBtn = document.getElementById('certPrev');
+  var nextBtn = document.getElementById('certNext');
+  if (!track || !viewport || !dotsWrap || !CERT_SLIDES.length) return;
+
+  var n = CERT_SLIDES.length;
+  var index = 0;
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  CERT_SLIDES.forEach(function (item, i) {
+    var slide = document.createElement('div');
+    slide.className = 'cert-slide';
+    slide.setAttribute('role', 'group');
+    slide.setAttribute('aria-roledescription', 'slide');
+    slide.setAttribute('aria-label', (i + 1) + ' de ' + n + ': ' + (item.alt || 'Certificado'));
+    var card = document.createElement('div');
+    card.className = 'cert-card';
+    var img = document.createElement('img');
+    img.src = item.src;
+    img.alt = item.alt || ('Certificado ' + (i + 1));
+    img.loading = i === 0 ? 'eager' : 'lazy';
+    img.decoding = 'async';
+    card.appendChild(img);
+
+    slide.appendChild(card);
+    track.appendChild(slide);
+  });
+
+  var slides = track.querySelectorAll('.cert-slide');
+  track.style.width = (n * 100) + '%';
+  slides.forEach(function (el) {
+    el.style.flex = '0 0 ' + (100 / n) + '%';
+    el.style.width = (100 / n) + '%';
+  });
+
+  function setTransition() {
+    track.style.transition = reduced ? 'none' : 'transform 0.45s cubic-bezier(0.4, 0, 0.2, 1)';
+  }
+
+  function goTo(i) {
+    index = Math.max(0, Math.min(n - 1, i));
+    setTransition();
+    var pct = (100 * index) / n;
+    track.style.transform = 'translateX(-' + pct + '%)';
+    var dots = dotsWrap.querySelectorAll('.cert-dot');
+    dots.forEach(function (d, j) {
+      var on = j === index;
+      d.classList.toggle('is-active', on);
+      d.setAttribute('aria-selected', on);
+    });
+  }
+
+  CERT_SLIDES.forEach(function (item, i) {
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'cert-dot' + (i === 0 ? ' is-active' : '');
+    btn.setAttribute('role', 'tab');
+    btn.setAttribute('aria-label', 'Certificado ' + (i + 1));
+    btn.setAttribute('aria-selected', i === 0);
+    btn.addEventListener('click', function () { goTo(i); });
+    dotsWrap.appendChild(btn);
+  });
+
+  goTo(0);
+
+  if (prevBtn) prevBtn.addEventListener('click', function () { goTo(index - 1); });
+  if (nextBtn) nextBtn.addEventListener('click', function () { goTo(index + 1); });
+
+  var touchStartX = null;
+  viewport.addEventListener('touchstart', function (e) {
+    touchStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+  viewport.addEventListener('touchend', function (e) {
+    if (touchStartX == null) return;
+    var dx = e.changedTouches[0].screenX - touchStartX;
+    touchStartX = null;
+    if (Math.abs(dx) < 45) return;
+    if (dx < 0) goTo(index + 1);
+    else goTo(index - 1);
+  }, { passive: true });
+
+  viewport.setAttribute('tabindex', '0');
+  viewport.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowLeft') { e.preventDefault(); goTo(index - 1); }
+    else if (e.key === 'ArrowRight') { e.preventDefault(); goTo(index + 1); }
+  });
+})();
+</script>
+
+</body>
+</html>

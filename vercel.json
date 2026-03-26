@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/defesa-executado-empresario.html",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}
