@@ -564,6 +564,42 @@
     color: var(--gold-light);
     line-height: 1.15;
     margin-bottom: 10px;
+    transition: transform 0.25s ease, text-shadow 0.25s ease;
+  }
+
+  .proof-strip-strong-link {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    animation: proofPulse 3.2s ease-in-out infinite;
+  }
+
+  .proof-strip-strong-link:hover,
+  .proof-strip-strong-link:focus-visible {
+    animation-play-state: paused;
+  }
+
+  .proof-strip-strong-link:hover .proof-strip-strong,
+  .proof-strip-strong-link:focus-visible .proof-strip-strong {
+    transform: translateY(-1px) scale(1.04);
+    text-shadow:
+      0 0 16px rgba(184,154,90,0.75),
+      0 0 32px rgba(184,154,90,0.55);
+  }
+
+  @keyframes proofPulse {
+    0%, 100% {
+      transform: translateY(0) scale(1);
+      text-shadow:
+        0 0 0 rgba(184,154,90,0),
+        0 0 0 rgba(184,154,90,0);
+    }
+    50% {
+      transform: translateY(-1px) scale(1.05);
+      text-shadow:
+        0 0 10px rgba(184,154,90,0.6),
+        0 0 26px rgba(184,154,90,0.4);
+    }
   }
 
   .proof-strip-text {
@@ -1987,7 +2023,7 @@
     <p class="hero-cta-note fade-in fade-in-4">Atendimento humano · Sigilo absoluto · Execução cível em todo o Brasil</p>
     <ul class="hero-trust-list fade-in fade-in-4" aria-label="Diferenciais de atendimento">
       <li>Atendimento cível em todo o Brasil</li>
-      <li>Experiência em +500 casos</li>
+      <li>Experiência em +1000 processos judiciais</li>
       <li>Canal direto com o advogado</li>
     </ul>
     <div class="hero-qualifier fade-in fade-in-4">
@@ -2033,10 +2069,18 @@
   <div class="urgency-item"><div class="urgency-dot"></div>Desconsideração da personalidade jurídica</div>
 </div>
 
-<div class="proof-strip" role="region" aria-label="Experiência e forma de atendimento">
+  <div class="proof-strip" role="region" aria-label="Experiência e forma de atendimento">
   <div class="proof-strip-item">
-    <div class="proof-strip-strong">+500</div>
-    <p class="proof-strip-text">Casos com defesa em execução cível e fiscal — empresários, sócios e empresas <strong>em todo o Brasil</strong>.</p>
+    <a class="proof-strip-strong-link" href="https://www.escavador.com/nomes/luiz-antonio-santiago-correa-11f8570d16" target="_blank" rel="noopener noreferrer" aria-label="+1000 processos — ver no Escavador">
+      <div class="proof-strip-strong">
+        <span>+1000</span>
+        <span style="display:inline-flex;align-items:center;justify-content:center;margin-left:6px;font-size:12px;border-radius:999px;border:1px solid rgba(212,184,122,0.7);padding:2px 6px;vertical-align:middle;">
+          <span style="margin-right:4px;font-size:11px;">✓</span>
+          <span style="font-size:10px;letter-spacing:0.08em;text-transform:uppercase;">verificar</span>
+        </span>
+      </div>
+    </a>
+    <p class="proof-strip-text">Processos judiciais comprovados.</p>
   </div>
   <div class="proof-strip-item">
     <div class="proof-strip-strong">24h</div>
@@ -2218,11 +2262,11 @@
 
   <div class="stats-row">
     <div class="stat-block">
-      <div class="stat-number">+500</div>
-      <div class="stat-label">Casos defendidos</div>
+      <div class="stat-number">+1000</div>
+      <div class="stat-label">Processos judiciais comprovados</div>
     </div>
     <div class="stat-block">
-      <div class="stat-number">15+</div>
+      <div class="stat-number">10+</div>
       <div class="stat-label">Anos de experiência</div>
     </div>
     <div class="stat-block">
@@ -2353,6 +2397,7 @@
   <div class="footer-meta">
     <div class="footer-oab">OAB/PA 18.239</div>
     <div style="margin-top: 4px;">© 2025 Luiz Santiago Advocacia e Consultoria — Todos os direitos reservados</div>
+    <div style="margin-top: 4px;">E-mail: <a href="mailto:luizsantiago@luizsantiago.adv.br" style="color: inherit; text-decoration: underline; text-underline-offset: 3px;">luizsantiago@luizsantiago.adv.br</a></div>
     <div style="margin-top: 4px; font-size: 11px; opacity: 0.6;">Este site tem caráter informativo e não constitui consulta jurídica.</div>
   </div>
 </footer>
